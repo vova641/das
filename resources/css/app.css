@@ -1,0 +1,126 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+[x-cloak] {
+    display: none;
+}
+
+.bg-oreng {
+    background: #f06717;
+    color: aliceblue;
+}
+
+.bg-oreng:hover {
+    background: #000000;
+    color: rgb(255, 255, 255);
+}
+
+.tr-popup {
+    display: none;
+}
+
+.teg {
+    font-size: 20px;
+}
+
+.blog-show {
+    position: relative;
+    padding-top: 50px;
+}
+
+.sa {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.car-blog {
+
+    background: #ffffff;
+    border-radius: 10px;
+}
+
+.car-blog h3 {
+    color: #000000;
+    font-weight: 600;
+    margin: 10px 5px;
+    margin-left: 10px;
+    border-radius: 5px;
+    padding: 5px;
+    transition: all 0.3s;
+}
+
+.bot {
+    background: #f06717;
+    color: aliceblue;
+    padding: 4px 15px;
+    border-radius: 5px;
+}
+
+.car-blog h3:hover {
+    transition: all 0.3s;
+    color: #f06717;
+    background: hsla(0, 0%, 100%, 0.26);
+}
+
+.loading{
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: #ffffff;
+}
+
+.hide{
+    opacity: 0;
+    z-index: -100;
+}
+
+@media (min-width: 641px) {
+    .display-blog {
+        padding-top: 54px;
+    }
+
+    .navigation-menu-phone {
+        user-select: none;
+        display: none;
+    }
+
+    .post-moble {
+        display: none;
+    }
+
+    .nav-phone-block li {
+        width: 100%;
+    }
+}
+
+@media (max-width: 640px) {
+
+    .header{
+        display: none;
+    }
+    .display-blog {
+        height: 100%;
+    }
+
+    .post-moble {
+        display: block;
+    }
+
+    .post-pc {
+        display: none;
+    }
+
+    .navigation-menu-phone {
+        user-select: none;
+        display: block;
+    }
+
+    .nav-phone-block li {
+        width: 100%;
+    }
+}
