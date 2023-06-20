@@ -14,9 +14,6 @@ use App\Http\Controllers\HomeworkController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
 Route::middleware([
     'auth:sanctum',
@@ -24,7 +21,7 @@ Route::middleware([
     'verified'
 ])->group(function () {
     Route::get('/homework', [HomeworkController::class, 'index'])->name('homework');
-    Route::get('/dashboard', [PostController::class, 'index'])->name('dashboard');
+    Route::get('/', [PostController::class, 'index'])->name('dashboard');
 });
 Route::get('{post:slug}', [PostController::class, 'show'])->name('view');
 Route::get('/category/{category:slug}', [PostController::class, 'byCategory'])->name('by-category');

@@ -13,7 +13,8 @@
     <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
     <!-- Scripts -->
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    <script src=""></script>
+    <link rel="stylesheet" href="../build/assets/app-71712fdb.css">
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
     <!-- Styles -->
     @livewireStyles
@@ -47,6 +48,7 @@
 
     @stack('modals')
     @livewireScripts
+    <script src="../build/assets/app-5d11a446.js"></script>
 </body>
 
 </html>
